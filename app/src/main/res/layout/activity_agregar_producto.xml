@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".agregar_producto">
+
+
+    <EditText
+        android:id="@+id/etNombreProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:padding="20dp"
+        android:layout_marginTop="60dp"/>
+
+    <EditText
+        android:id="@+id/etMarcaProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Marca"
+        android:padding="20dp"
+        android:layout_marginTop="125dp"/>
+
+    <EditText
+        android:id="@+id/etcantidadProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:hint="Cantidad"
+        android:inputType="number"
+        android:padding="20dp" />
+
+    <EditText
+        android:id="@+id/etPrecioProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Precio"
+        android:padding="20dp"
+        android:layout_marginTop="255dp"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/btnGuardarProductos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="330dp"
+        android:text="Guardar"
+        android:textSize="18dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnMostrarProductos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_revert"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"/>
+
+</RelativeLayout>
