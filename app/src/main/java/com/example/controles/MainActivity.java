@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
 
         menu.setHeaderTitle(misProductos.getString(1));
 
-        menu.setHeaderTitle(datosJSON.getJSONObject(posicion).getString("descripcion"));
+        menu.setHeaderTitle(datosJSON.getJSONObject(posicion).getString("codigo"));
         } catch (Exception ex) {
 
         }
@@ -193,7 +193,7 @@ public class MainActivity extends AppCompatActivity {
     AlertDialog EliminarProducto() {
         AlertDialog.Builder Confirmacion = new AlertDialog.Builder(MainActivity.this);
         try {
-            Confirmacion.setTitle(datosJSON.getJSONObject(posicion).getJSONObject("value").getString("descripcion"));
+            Confirmacion.setTitle(datosJSON.getJSONObject(posicion).getJSONObject("value").getString("codigo"));
             Confirmacion.setMessage("¿Esta seguro de eliminar el producto?");
             Confirmacion.setPositiveButton("SI", new DialogInterface.OnClickListener() {
                 @Override
