@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".agregarProductos"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/etcodigo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="85dp"
+        android:hint="Codigo" />
+
+    <EditText
+        android:id="@+id/etdescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="145dp"
+        android:hint="Descripcion" />
+
+    <EditText
+        android:id="@+id/etmarca"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="205dp"
+        android:hint="Marca" />
+
+    <EditText
+        android:id="@+id/etprecentacion"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="265dp"
+        android:hint="Precentacion" />
+
+    <EditText
+        android:id="@+id/etprecio"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="320dp"
+        android:ems="10"
+        android:hint="Precio"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnGuardarProducto"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="390dp"
+        android:text="Guardar Producto" />
+
+
+    <ImageView
+        android:id="@+id/imgPhotoProducto"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="30dp"
+        android:soundEffectsEnabled="false" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnMostrarProductos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_revert"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"/>
+
+</RelativeLayout>

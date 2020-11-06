@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Uso de Controles Basicos</string>
+    <string name="app_name">SuperStore</string>
     <string name="titutlo">CONTROLES BASICO</string>
     <string name="nombre">Escriba su nombre</string>
     <string name="apellido">Escriba su apellido</string>
